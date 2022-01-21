@@ -1,0 +1,14 @@
+.headingContainer {
+  height: max-content;
+  align-self: center;
+}
+
+.heading {
+  margin-bottom: 0;
+  font-size: 1.75rem;
+}
+
+.subHeading {
+  margin-bottom: 0;
+  font-size: 1.25rem;
+}
