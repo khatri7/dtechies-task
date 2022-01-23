@@ -23,7 +23,8 @@ const TabItem: React.FC<TabItemProps> = ({
       className={clsx(
         "pb-3 ps-4 pe-4 bg-transparent",
         styles.tab,
-        isSelected && styles.selected
+        isSelected && styles.selected,
+        isSelected && "text-primary font-weight-bold"
       )}
       onClick={onClick}
     >

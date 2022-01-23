@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Tabs from "components/Home/Tabs";
 import Header from "components/Home/Header";
 import TabBody from "components/Home/TabBody";
+import Trend from "components/Home/Trend";
 
 const Home: React.FC = () => {
   const [selectedTab, setSelectedTab] = useState<number>(0);
@@ -12,6 +13,15 @@ const Home: React.FC = () => {
         <Tabs selectedTab={selectedTab} setSelectedTab={setSelectedTab} />
       </div>
       <TabBody selectedTab={selectedTab} />
+      <hr
+        style={{
+          height: "3px",
+          marginLeft: "-3rem",
+          marginRight: "-3rem",
+        }}
+        className="mb-5"
+      />
+      <Trend />
     </div>
   );
 };

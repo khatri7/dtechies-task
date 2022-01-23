@@ -8,6 +8,5 @@
 
 .selected {
   border-bottom: 2px solid blue;
-  color: blue;
   font-weight: 600;
 }
