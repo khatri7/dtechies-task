@@ -7,7 +7,6 @@ const Trend: React.FC = () => {
       <h2
         style={{
           fontSize: "1.5rem",
-          fontWeight: "200",
         }}
         className="text-primary mb-4"
       >

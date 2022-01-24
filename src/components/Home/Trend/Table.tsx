@@ -20,10 +20,10 @@ const TableRow: React.FC<TableRowProps> = ({
 }) => (
   <tr className={clsx(isCurrentUserScore && "text-success font-weight-bolder")}>
     <td>{label}</td>
-    <td>{`${accuracy}%`}</td>
-    <td>{attempt}</td>
-    <td>{score}</td>
-    <td>{band}</td>
+    <td className="text-center">{`${accuracy}%`}</td>
+    <td className="text-center">{attempt}</td>
+    <td className="text-center">{score}</td>
+    <td className="text-center">{band}</td>
   </tr>
 );
 
@@ -37,14 +37,21 @@ const Table: React.FC = () => {
       >
         <tr>
           <th>User</th>
-          <th>Accuracy</th>
-          <th>Attempt</th>
-          <th>Score</th>
-          <th>Band</th>
+          <th className="text-center">Accuracy</th>
+          <th className="text-center">Attempt</th>
+          <th className="text-center">Score</th>
+          <th className="text-center">Band</th>
         </tr>
       </thead>
       <tbody>
-        <TableRow label="You" accuracy={60} attempt={5} score={6} band={6} isCurrentUserScore />
+        <TableRow
+          label="You"
+          accuracy={60}
+          attempt={5}
+          score={6}
+          band={6}
+          isCurrentUserScore
+        />
         <TableRow
           label="Talati Shlok (Topper)"
           accuracy={95}

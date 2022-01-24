@@ -19,4 +19,11 @@ export interface Score {
   reading: ScoringSection;
   writing: ScoringSection;
   speaking: ScoringSection;
+  overallBand: number;
+}
+
+export interface UserScores {
+  id: number;
+  fullName: string;
+  scores: Score[];
 }

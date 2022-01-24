@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import { scores } from "utils/data/scores";
 import { ScoringSection, Section, Sections } from "utils/types";
 
 interface Props {
@@ -16,7 +15,7 @@ interface BandProps {
 }
 
 const Band: React.FC<BandProps> = ({ band }) => (
-  <div style={{ height: "150px", width: "150px" }}>
+  <div style={{ height: "160px", width: "160px" }}>
     <div className="text-center border border-5 rounded-circle h-100 d-flex align-items-center justify-content-center">
       <div>
         <h1
@@ -41,11 +40,11 @@ const ScoreDetails: React.FC<ScoreDetailsProps> = ({ label, score }) => (
 
 const TabBody: React.FC<Props> = ({ selectedTab }) => {
   const [sectionScore, setSectionScore] = useState<ScoringSection>();
-  useEffect(() => {
-    const test = scores[0];
-    const currentSection = Sections[selectedTab] as Section;
-    setSectionScore(test[currentSection]);
-  }, [selectedTab]);
+  // useEffect(() => {
+  //   const test = scores[0];
+  //   const currentSection = Sections[selectedTab] as Section;
+  //   setSectionScore(test[currentSection]);
+  // }, [selectedTab]);
   return (
     <div className="container pt-5 pb-5">
       <div className="row">
