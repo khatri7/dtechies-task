@@ -15,6 +15,8 @@ export interface ScoringSection {
 }
 
 export interface Score {
+  id: number;
+  userId: number;
   listening: ScoringSection;
   reading: ScoringSection;
   writing: ScoringSection;
@@ -22,8 +24,7 @@ export interface Score {
   overallBand: number;
 }
 
-export interface UserScores {
+export interface User {
   id: number;
   fullName: string;
-  scores: Score[];
 }

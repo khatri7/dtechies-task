@@ -1,0 +1,121 @@
+{
+  "me": {
+    "id": 1,
+    "fullName": "Abhishek Khatri"
+  },
+  "scores": [
+    {
+      "id": 1,
+      "userId": 1,
+      "listening": {
+        "totalQuestions": 40,
+        "questionsAttended": 35,
+        "correctAnswers": 31,
+        "band": 6.5
+      },
+      "reading": {
+        "totalQuestions": 40,
+        "questionsAttended": 34,
+        "correctAnswers": 30,
+        "band": 6
+      },
+      "writing": {
+        "totalQuestions": 40,
+        "questionsAttended": 38,
+        "correctAnswers": 35,
+        "band": 7.5
+      },
+      "speaking": {
+        "totalQuestions": 40,
+        "questionsAttended": 35,
+        "correctAnswers": 32,
+        "band": 7
+      },
+      "overallBand": 6
+    },
+    {
+      "id": 3,
+      "userId": 2,
+      "listening": {
+        "totalQuestions": 40,
+        "questionsAttended": 35,
+        "correctAnswers": 31,
+        "band": 6.5
+      },
+      "reading": {
+        "totalQuestions": 40,
+        "questionsAttended": 34,
+        "correctAnswers": 30,
+        "band": 6
+      },
+      "writing": {
+        "totalQuestions": 40,
+        "questionsAttended": 38,
+        "correctAnswers": 35,
+        "band": 7.5
+      },
+      "speaking": {
+        "totalQuestions": 40,
+        "questionsAttended": 35,
+        "correctAnswers": 32,
+        "band": 7
+      },
+      "overallBand": 6
+    },
+    {
+      "userId": 2,
+      "listening": {
+        "totalQuestions": 40,
+        "questionsAttended": 35,
+        "correctAnswers": 31,
+        "band": 6.5
+      },
+      "reading": {
+        "totalQuestions": 40,
+        "questionsAttended": 34,
+        "correctAnswers": 30,
+        "band": 6
+      },
+      "writing": {
+        "totalQuestions": 40,
+        "questionsAttended": 38,
+        "correctAnswers": 35,
+        "band": 7.5
+      },
+      "speaking": {
+        "totalQuestions": 40,
+        "questionsAttended": 35,
+        "correctAnswers": 32,
+        "band": 7
+      },
+      "overallBand": 6,
+      "id": 5
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "fullName": "Abhishek Khatri"
+    },
+    {
+      "id": 2,
+      "fullName": "Lata Sharma"
+    },
+    {
+      "id": 3,
+      "fullName": "Rakesh Gupta"
+    },
+    {
+      "id": 4,
+      "fullName": "Aditi Nibhanupudi"
+    },
+    {
+      "id": 5,
+      "fullName": "Lalitha Anand"
+    },
+    {
+      "id": 6,
+      "fullName": "Kalpana Mhasalkar"
+    }
+  ]
+}
