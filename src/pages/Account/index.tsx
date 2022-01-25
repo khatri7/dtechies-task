@@ -16,9 +16,9 @@ const Account: React.FC = () => {
       <h2 className="text-primary">Your Scores</h2>
       <Scores />
       <div>
-        <button type="button" className="btn btn-primary">
+        <Link to="/add-score" type="button" className="btn btn-primary">
           Add Score
-        </button>
+        </Link>
       </div>
     </div>
   );
