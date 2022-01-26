@@ -28,3 +28,7 @@ export interface User {
   id: number;
   fullName: string;
 }
+
+export interface CurrentUser extends User {
+  scores: Score[];
+}

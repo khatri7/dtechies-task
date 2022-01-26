@@ -10,6 +10,11 @@ export const getScores = async (config?: AxiosRequestConfig) => {
   return data;
 };
 
+export const getUsers = async (config?: AxiosRequestConfig) => {
+  const { data } = await axios.get<User[]>("/users", config || {});
+  return data;
+};
+
 export const getCurrentUser = async () => {
   const { data } = await axios.get<User>("/me");
   return data;

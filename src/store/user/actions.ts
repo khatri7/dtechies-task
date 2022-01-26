@@ -1,5 +1,9 @@
 import { AppDispatch, RootState } from "store";
-import { getCurrentUser, getScoresByUserId } from "utils/api/api-calls";
+import {
+  getCurrentUser,
+  getScoresByUserId,
+  getUsers,
+} from "utils/api/api-calls";
 
 export const SET_USERS = "SET_USERS";
 export const SET_CURRENT_USER = "SET_CURRENT_USER";
@@ -29,3 +33,12 @@ export const setCurrentUserScores =
       console.error(err);
     }
   };
+
+export const setAllUsers = () => async (dispatch: AppDispatch) => {
+  try {
+    const users = await getUsers();
+    dispatch({ type: SET_USERS, data: users });
+  } catch (err) {
+    console.error(err);
+  }
+};

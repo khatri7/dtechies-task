@@ -1,6 +1,6 @@
 import { AppDispatch } from "store";
 import { setScores } from "store/scores/actions";
-import { setUser, setCurrentUserScores } from "store/user/actions";
+import { setUser, setCurrentUserScores, setAllUsers } from "store/user/actions";
 
 export const INIT_APP = "INIT_APP";
 export const FINISH_INIT_APP = "FINISH_INIT_APP";
@@ -12,7 +12,11 @@ const seeLoading = async () => {
 export const initializeApp = () => async (dispatch: AppDispatch) => {
   dispatch({ type: INIT_APP });
   try {
-    await Promise.all([dispatch(setUser()), dispatch(setScores())]);
+    await Promise.all([
+      dispatch(setUser()),
+      dispatch(setScores()),
+      dispatch(setAllUsers()),
+    ]);
     await dispatch(setCurrentUserScores());
     await seeLoading();
     dispatch({ type: FINISH_INIT_APP });
