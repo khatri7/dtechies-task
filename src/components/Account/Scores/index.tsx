@@ -3,6 +3,7 @@ import { useSelector, useDispatch } from "react-redux";
 import { RootState } from "store";
 import { delScore } from "store/scores/actions";
 import { Score, ScoringSection } from "utils/types";
+import { Link } from "react-router-dom";
 
 interface TableRowProps {
   id: number;
@@ -30,9 +31,13 @@ const TableRow: React.FC<TableRowProps> = ({
     <td>{speaking.band}</td>
     <td>{overallBand}</td>
     <td className="text-end">
-      <button type="button" className="btn btn-secondary">
+      <Link
+        type="button"
+        className="btn btn-secondary"
+        to={`/update-score/${id}`}
+      >
         Update
-      </button>
+      </Link>
     </td>
     <td className="text-end">
       <button

@@ -27,3 +27,13 @@ export const deleteScore = async (scoreId: number) => {
   const { statusText } = await axios.delete(`/scores/${scoreId}`);
   return statusText === "OK";
 };
+
+export const createScore = async (reqBody: Omit<Score, "id">) => {
+  const { data } = await axios.post("/scores", reqBody);
+  return data;
+};
+
+export const updateScoreReq = async (scoreId: number, updatedScore: Score) => {
+  const { data } = await axios.put(`/scores/${scoreId}`, updatedScore);
+  return data;
+};

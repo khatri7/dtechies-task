@@ -6,6 +6,7 @@ import Home from "pages/Home";
 import Account from "pages/Account";
 import Loading from "components/Loading";
 import AddScore from "pages/AddScore";
+import UpdateScore from "pages/UpdateScore";
 
 const App: React.FC = () => {
   return (
@@ -16,6 +17,7 @@ const App: React.FC = () => {
           <Route path="/" element={<Home />} />
           <Route path="/account" element={<Account />} />
           <Route path="/add-score" element={<AddScore />} />
+          <Route path="/update-score/:scoreId" element={<UpdateScore />} />
         </Routes>
       </Router>
     </Provider>
